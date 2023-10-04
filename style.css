@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    width: 100%;
+    height: 60px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.navleft {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.navright {
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.image img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.list {
+    display: none;
+}
+
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.fullnav .ds {
+    color: white;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+    border: 1px solid white;
+    text-decoration: none
+}
+
+.shortnav .ds {
+    color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(160, 239, 43);
+    border-radius: 10px;
+}
+
+button:hover {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(198, 245, 128);
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.ds:hover {
+    color: #4781b8;
+    background-color: #bcd7f1;
+    font-size: 17px;
+}
+
+.shortnav {
+    display: none;
+}
+
+.navrightlogin {
+    width: 100px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user {
+    width: 40px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.user li:hover {
+    .sub {
+        display: block;
+    }
+}
+
+.user>li {
+    position: relative;
+    top: 20px;
+}
+
+.sub {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    display: none;
+}
+
+.user_fc {
+    display: block;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    border: 1px solid #dad4d4;
+}
+
+.user_fc:hover {
+    color: #4781b8;
+    background-color: #bcd7f1;
+    font-size: 17px;
+}
+
+
+
+@media only screen and (max-width:650px) {
+    .fullnav {
+        display: none;
+    }
+
+    .shortnav {
+        display: block;
+    }
+
+    .ds {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-decoration: none
+    }
+}
